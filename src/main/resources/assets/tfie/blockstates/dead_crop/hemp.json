@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "mature=false": { "model": "tfie:block/dead_crop/hemp_young" },
+    "mature=true,part=top": { "model": "tfie:block/dead_crop/hemp_top" },
+    "mature=true,part=bottom": { "model": "tfie:block/dead_crop/hemp_bottom" }
+  }
+}

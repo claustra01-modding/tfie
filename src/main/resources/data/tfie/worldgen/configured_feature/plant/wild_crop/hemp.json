@@ -1,0 +1,4 @@
+{
+  "type": "tfc:tall_wild_crop",
+  "config": { "block": "tfie:wild_crop/hemp" }
+}

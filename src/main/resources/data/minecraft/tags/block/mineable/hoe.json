@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "tfie:crop/hemp",
+    "tfie:dead_crop/hemp",
+    "tfie:wild_crop/hemp"
+  ]
+}
