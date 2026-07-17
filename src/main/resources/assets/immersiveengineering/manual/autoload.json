@@ -1,0 +1,18 @@
+{
+  "autoload_priority": 4,
+  "tfie:tfc_ie_changes": {
+    "category_weight": 8,
+    "entry_list": [
+      "tfie:tfc_ie_mold",
+      "tfie:tfc_ie_chemicals",
+      "tfie:tfc_ie_multiblocks",
+      "tfie:tfc_ie_blueprint",
+      "tfie:tfc_ie_jute",
+      "tfie:tfc_ie_hemp",
+      "tfie:tfc_ie_herbicide",
+      "tfie:tfc_ie_external_heater",
+      "tfie:tfc_ie_drill",
+      "tfie:tfc_ie_dynamo"
+    ]
+  }
+}

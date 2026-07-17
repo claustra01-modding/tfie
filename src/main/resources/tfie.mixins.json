@@ -1,0 +1,15 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "net.claustra01.tfie.mixin",
+  "injectors": {
+    "defaultRequire": 1
+  },
+  "mixins": [
+    "AllowInCrateMixin",
+    "CrucibleBlockEntityAccessor",
+    "DynamoBlockEntityMixin",
+    "IngredientFluidStackMixin"
+  ],
+  "refmap": "tfie.refmap.json"
+}

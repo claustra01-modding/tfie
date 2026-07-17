@@ -1,0 +1,10 @@
+{
+  "start": {
+    "type": "item_display",
+    "items": [
+      {
+        "id": "tfie:wild_crop/hemp"
+      }
+    ]
+  }
+}

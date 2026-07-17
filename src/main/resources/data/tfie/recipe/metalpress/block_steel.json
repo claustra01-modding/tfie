@@ -9,6 +9,6 @@
   },
   "mold": "tfie:mold_block",
   "result": {
-    "id": "immersiveengineering:storage_steel"
+    "id": "tfc:metal/block/steel"
   }
 }

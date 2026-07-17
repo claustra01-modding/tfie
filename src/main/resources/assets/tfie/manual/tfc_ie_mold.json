@@ -1,0 +1,10 @@
+{
+  "sheet": {
+    "type": "blueprint",
+    "recipe": "tfie:blueprint/mold_sheet"
+  },
+  "block": {
+    "type": "blueprint",
+    "recipe": "tfie:blueprint/mold_block"
+  }
+}

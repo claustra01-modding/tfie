@@ -38,6 +38,10 @@ repositories {
             includeGroup 'vazkii.patchouli'
         }
     }
+    exclusiveContent {
+        forRepository { maven { url = 'https://maven.blamejared.com' } }
+        filter { includeGroup 'malte0811' }
+    }
 }
 
 base {
@@ -131,6 +135,12 @@ dependencies {
     implementation group: 'curse.maven', name: 'terrafirmacraft-302973', version: '7452541'
     implementation "blusunrize.immersiveengineering:ImmersiveEngineering:${ie_version}"
     implementation "vazkii.patchouli:Patchouli:${patchouli_version}"
+    jarJar(implementation('malte0811:DualCodecs:0.1.2')) {
+        version {
+            strictly('[0.1.2, 1)')
+            prefer('0.1.2')
+        }
+    }
     // Example optional mod dependency with JEI
     // The JEI API is declared for compile time use, while the full JEI artifact is used at runtime
     // compileOnly "mezz.jei:jei-${mc_version}-common-api:${jei_version}"

@@ -1,0 +1,78 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "name": "Multiblock Changes",
+  "category": "tfc:tfc_ie_changes",
+  "icon": "tfc:fire_bricks",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "To create the $(thing)Arc Furnace$(), use TFC $(thing)Fire Bricks$() instead of IE Blast Bricks and the TFC $(thing)Steel Plated Block$() as its steel storage block.$(br)You do not need IE's Blast Furnace or Alloy Kiln because TFC provides those processing paths."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "tfc:crafting/fire_bricks"
+    },
+    {
+      "type": "patchouli:multiblock",
+      "multiblock": {
+        "pattern": [
+          [
+            "     ",
+            "S    ",
+            "LLL  ",
+            "S    ",
+            "     "
+          ],
+          [
+            "     ",
+            "SBBB ",
+            "LBBB ",
+            "SBBB ",
+            "     "
+          ],
+          [
+            "M T  ",
+            "LBBBB",
+            "LBBBB",
+            "LBBBB",
+            "M T  "
+          ],
+          [
+            "HHT  ",
+            "LBB  ",
+            "LBB  ",
+            "LBB  ",
+            "HHT R"
+          ],
+          [
+            "MMTmm",
+            "Mmmmm",
+            "Hmmm0",
+            "Mmmmm",
+            "MMTmS"
+          ]
+        ],
+        "mapping": {
+          "S": "immersiveengineering:steel_scaffolding_standard",
+          "T": "tfc:metal/block/steel",
+          "M": "immersiveengineering:sheetmetal_steel",
+          "m": "immersiveengineering:slab_sheetmetal_steel",
+          "B": "tfc:fire_bricks",
+          "L": "immersiveengineering:light_engineering",
+          "H": "immersiveengineering:heavy_engineering",
+          "R": "immersiveengineering:rs_engineering",
+          "0": "minecraft:cauldron"
+        }
+      },
+      "name": "Arc Furnace",
+      "text": "",
+      "enable_visualize": true
+    }
+  ],
+  "read_by_default": true,
+  "sortnum": 4,
+  "extra_recipe_mappings": {
+    "immersiveengineering:cokebrick": 0,
+    "immersiveengineering:blastbrick": 0
+  }
+}

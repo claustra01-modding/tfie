@@ -1,0 +1,14 @@
+{
+  "start": {
+    "type": "item_display",
+    "items": [
+      {
+        "id": "tfc:fire_bricks"
+      }
+    ]
+  },
+  "arcfurnace_recipe": {
+    "type": "multiblock",
+    "name": "multiblocks/arcfurnace"
+  }
+}

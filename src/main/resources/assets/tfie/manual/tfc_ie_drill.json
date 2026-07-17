@@ -1,0 +1,16 @@
+{
+  "start": {
+    "type": "item_display",
+    "items": [
+      {
+        "id": "tfie:drillhead_black_steel"
+      },
+      {
+        "id": "tfie:drillhead_blue_steel"
+      },
+      {
+        "id": "tfie:drillhead_red_steel"
+      }
+    ]
+  }
+}
