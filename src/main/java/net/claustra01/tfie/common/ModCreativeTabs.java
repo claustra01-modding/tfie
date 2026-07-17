@@ -21,6 +21,9 @@ public final class ModCreativeTabs {
             output.accept(ModItems.HAMMER_HEAD.get());
             output.accept(ModItems.MOLD_SHEET.get());
             output.accept(ModItems.MOLD_BLOCK.get());
+            output.accept(ModItems.DRILL_HEAD_BLACK_STEEL.get());
+            output.accept(ModItems.DRILL_HEAD_BLUE_STEEL.get());
+            output.accept(ModItems.DRILL_HEAD_RED_STEEL.get());
             output.accept(ModBlocks.WILD_HEMP.get());
         })
         .build()), (parameters, output) -> {
@@ -29,6 +32,9 @@ public final class ModCreativeTabs {
             output.accept(ModItems.HAMMER_HEAD.get());
             output.accept(ModItems.MOLD_SHEET.get());
             output.accept(ModItems.MOLD_BLOCK.get());
+            output.accept(ModItems.DRILL_HEAD_BLACK_STEEL.get());
+            output.accept(ModItems.DRILL_HEAD_BLUE_STEEL.get());
+            output.accept(ModItems.DRILL_HEAD_RED_STEEL.get());
             output.accept(ModBlocks.WILD_HEMP.get());
         });
 

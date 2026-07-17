@@ -24,6 +24,15 @@ public final class ModItems {
     public static final ItemId MOLD_BLOCK = new ItemId(
         ITEMS.register("mold_block", () -> new Item(new Item.Properties().stacksTo(1)))
     );
+    public static final ItemId DRILL_HEAD_BLACK_STEEL = new ItemId(
+        ITEMS.register("drillhead_black_steel", () -> new TFIEDrillHeadItem(TFIEDrillHeadItem.BLACK_STEEL))
+    );
+    public static final ItemId DRILL_HEAD_BLUE_STEEL = new ItemId(
+        ITEMS.register("drillhead_blue_steel", () -> new TFIEDrillHeadItem(TFIEDrillHeadItem.BLUE_STEEL))
+    );
+    public static final ItemId DRILL_HEAD_RED_STEEL = new ItemId(
+        ITEMS.register("drillhead_red_steel", () -> new TFIEDrillHeadItem(TFIEDrillHeadItem.RED_STEEL))
+    );
 
     private ModItems() {}
 }

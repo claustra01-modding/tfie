@@ -7,5 +7,8 @@
   "item.tfie.tool_head.ie_hammer": "Engineer's Hammer Head",
   "item.tfie.mold_sheet": "Metal Press Mold: Sheet",
   "item.tfie.mold_block": "Metal Press Mold: Block",
+  "item.tfie.drillhead_black_steel": "Black Steel Drill Head",
+  "item.tfie.drillhead_blue_steel": "Blue Steel Drill Head",
+  "item.tfie.drillhead_red_steel": "Red Steel Drill Head",
   "tfie.creative_tab.main": "TFIE"
 }
