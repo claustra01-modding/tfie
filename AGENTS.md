@@ -97,6 +97,16 @@ Immersive Engineering（IE）のNeoForge連携アドオンである。
 - IEの通常crafting置換と、その置換先となるTFC anvil recipeを対で保つ。
 - Arc FurnaceのstructureではTFC Fire Bricksを使用し、IE Alloy Kilnおよび
   Blast Furnace系の不要recipeを無効化する。
+- TFCの加熱・鉱石処理工程を迂回させないため、IE標準のCrusherとArc Furnaceにある
+  vanilla鉱石倍化recipeを同じIDで無効化する。対象は両機械の`ore_*`、
+  `raw_ore_*`、`raw_block_*`に加え、Crusherの`nether_gold`とArc Furnaceの
+  `netherite_scrap`とする。
+- Arc Furnaceのvanilla精錬相当であるIE標準`dust_*` recipeも同じIDで無効化する。
+  alloy recipe、機械固有加工recipe、TFIEが追加するTFC向けrecipeまで一括で
+  無効化しない。
+- IE標準Arc Furnaceの`alloy_*`のうち、TFCに存在しないConstantan、Electrum、
+  Invar、Manyullynのrecipeは同じIDで無効化する。TFCに存在するBrass、Bronze、
+  Rose Goldは維持する。
 - steel storage blockを作るTFIE Metal Press recipeの出力は
   `tfc:metal/block/steel`（Steel Plated Block）とする。材料判定やmultiblock互換は
   `c:storage_blocks/steel`タグへ任せ、独自のブロック限定Mixinを追加しない。
