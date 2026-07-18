@@ -1,0 +1,37 @@
+{
+  "type": "immersiveengineering:arc_furnace",
+  "additives": [
+    {
+      "basePredicate": {
+        "tag": "c:ingots/steel"
+      },
+      "count": 5
+    },
+    {
+      "basePredicate": {
+        "tag": "c:ingots/brass"
+      },
+      "count": 2
+    },
+    {
+      "basePredicate": {
+        "tag": "c:ingots/rose_gold"
+      },
+      "count": 3
+    }
+  ],
+  "energy": 51200,
+  "input": {
+    "basePredicate": {
+      "tag": "c:ingots/black_steel"
+    },
+    "count": 10
+  },
+  "results": [
+    {
+      "count": 20,
+      "id": "tfc:metal/ingot/weak_red_steel"
+    }
+  ],
+  "time": 100
+}

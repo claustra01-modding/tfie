@@ -104,9 +104,16 @@ Immersive Engineering（IE）のNeoForge連携アドオンである。
 - Arc Furnaceのvanilla精錬相当であるIE標準`dust_*` recipeも同じIDで無効化する。
   alloy recipe、機械固有加工recipe、TFIEが追加するTFC向けrecipeまで一括で
   無効化しない。
-- IE標準Arc Furnaceの`alloy_*`のうち、TFCに存在しないConstantan、Electrum、
-  Invar、Manyullynのrecipeは同じIDで無効化する。TFCに存在するBrass、Bronze、
-  Rose Goldは維持する。
+- IE標準Arc Furnaceの`alloy_*` recipeは、TFCの合金比率を迂回するため全て同じIDで
+  無効化する。
+- Arc Furnace用のTFC合金recipeは、Bismuth Bronze、Black Bronze、Brass、Bronze、
+  Rose Gold、Sterling Silver、Weak Steel、Weak Blue Steel、Weak Red Steelの9種類を
+  `tfie:arcfurnace/alloy/`以下に揃え、出力にはTFC ingotを明示する。
+- Arc Furnace用TFC合金recipeの整数比はTFC本体の許容範囲内にする。現在の比率は、
+  Bismuth Bronze `Cu:Zn:Bi = 3:1:1`、Black Bronze `Cu:Ag:Au = 2:1:1`、
+  Brass `Cu:Zn = 9:1`、Bronze `Cu:Sn = 9:1`、Rose Gold `Au:Cu = 3:1`、
+  Sterling Silver `Ag:Cu = 3:2`、Weak Steel `Steel:Ni:Black Bronze = 6:2:2`、
+  Weak Blue/Red Steelは`Black Steel:Steel:Alloy A:Alloy B = 10:5:2:3`とする。
 - steel storage blockを作るTFIE Metal Press recipeの出力は
   `tfc:metal/block/steel`（Steel Plated Block）とする。材料判定やmultiblock互換は
   `c:storage_blocks/steel`タグへ任せ、独自のブロック限定Mixinを追加しない。
