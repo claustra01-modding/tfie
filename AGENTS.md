@@ -95,8 +95,9 @@ Immersive Engineering（IE）のNeoForge連携アドオンである。
   上書きし、TFC進行を迂回できないようにする。
 - 無効化用recipeは`tfie:empty` serializerと`neoforge:false`条件を使用する。
 - IEの通常crafting置換と、その置換先となるTFC anvil recipeを対で保つ。
-- Arc FurnaceのstructureではTFC Fire Bricksを使用し、IE Alloy Kilnおよび
-  Blast Furnace系の不要recipeを無効化する。
+- Arc Furnaceのstructure NBTではTFC Fire BricksとTFC Steel Plated Blockを
+  直接使用する。Engineer’s Manualのmultiblock描画も同じstructureを参照させ、
+  実際の形成条件とGuide上の表示を一致させる。
 - TFCの加熱・鉱石処理工程を迂回させないため、IE標準のCrusherとArc Furnaceにある
   vanilla鉱石倍化recipeを同じIDで無効化する。対象は両機械の`ore_*`、
   `raw_ore_*`、`raw_block_*`に加え、Crusherの`nether_gold`とArc Furnaceの
@@ -115,8 +116,9 @@ Immersive Engineering（IE）のNeoForge連携アドオンである。
   Sterling Silver `Ag:Cu = 3:2`、Weak Steel `Steel:Ni:Black Bronze = 6:2:2`、
   Weak Blue/Red Steelは`Black Steel:Steel:Alloy A:Alloy B = 10:5:2:3`とする。
 - steel storage blockを作るTFIE Metal Press recipeの出力は
-  `tfc:metal/block/steel`（Steel Plated Block）とする。材料判定やmultiblock互換は
-  `c:storage_blocks/steel`タグへ任せ、独自のブロック限定Mixinを追加しない。
+  `tfc:metal/block/steel`（Steel Plated Block）とする。Arc Furnaceの該当位置では
+  IEの`c:storage_blocks/steel`一致より強い`BlockMatcher`判定を登録し、
+  TFC Steel Plated Blockとの完全一致だけを許可する。
 - Minecraft 1.21のデータディレクトリ名は`recipe/`、`loot_table/`のように
   単数形を使用する。
 - Metal Pressの独自moldはスタック数を1とし、mold tagとTFC item sizeを定義する。
@@ -137,6 +139,8 @@ Immersive Engineering（IE）のNeoForge連携アドオンである。
 - world generation用タグへの追加では`"replace": false`を指定する。
 - IE Engineer's ManualとTFC Field Guideには実装済み連携だけを記載し、Quartzや
   未移植の鉱石・金属機能を案内しない。
+- IE Engineer's Manualの独自categoryには、`manual.<namespace>.<category>`形式の
+  `en_us`翻訳キーを必ず用意する。
 - Field Guideの三つ並び金床recipe表示には
   `net.claustra01.tfie.compat.patchouli.TriAnvilComponent`を使用する。
 

@@ -12,6 +12,7 @@ import net.claustra01.tfie.common.ModBlocks;
 import net.claustra01.tfie.common.ModCreativeTabs;
 import net.claustra01.tfie.common.ModItems;
 import net.claustra01.tfie.common.ModInteractions;
+import net.claustra01.tfie.common.MultiblockCompatibility;
 import net.claustra01.tfie.config.TFIEConfig;
 import net.dries007.tfc.common.blockentities.TFCBlockEntities;
 import net.minecraft.core.registries.Registries;
@@ -49,6 +50,7 @@ public final class TFIE {
     }
 
     private void commonSetup(FMLCommonSetupEvent event) {
+        event.enqueueWork(MultiblockCompatibility::register);
         ModInteractions.register();
         ClocheRenderFunctions.initializeSoils();
         HerbicideEffects.register();
