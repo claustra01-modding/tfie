@@ -1,21 +1,13 @@
 # TFIE
 
-TFIE is a small compatibility addon for TerraFirmaCraft and Immersive
-Engineering on Minecraft 1.21.1.
+TerraFirmaCraftとImmersive Engineeringを統合するMinecraft 1.21.1 / NeoForge向け互換Modです。
 
-Currently implemented:
+## Build
 
-- Treated wood lumber, made by sealing TFC lumber in IE creosote and crafted
-  2x2 into treated wood planks.
-- IE hemp as a TFC double crop, including climate and nutrient requirements,
-  dead crops, wild crops, world generation, and TFC-style harvest yield.
+Requirement: JDK 21
 
-## Development
+```sh
+./gradlew build
+```
 
-Run `./gradlew build` to produce the mod JAR in `build/libs`.
-
-## Credits
-
-The initial integration follows
-[TFC-IE-Crossover](https://github.com/NMagpie/TFC-IE-Crossover/tree/1.21.x).
-See `THIRD_PARTY_NOTICES.md` for its MIT license notice.
+参照実装のライセンスは `THIRD_PARTY_NOTICES.md` を参照してください。
