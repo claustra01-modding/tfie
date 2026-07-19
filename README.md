@@ -10,4 +10,4 @@ Requirement: JDK 21
 ./gradlew build
 ```
 
-参照実装のライセンスは `THIRD_PARTY_NOTICES.md` を参照してください。
+ライセンスと第三者表示は `LICENCE` を参照してください。

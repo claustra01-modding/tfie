@@ -215,7 +215,7 @@ tasks.withType(JavaCompile).configureEach {
 }
 
 tasks.named('jar', Jar).configure {
-    from('THIRD_PARTY_NOTICES.md') {
+    from('LICENCE') {
         into 'META-INF'
     }
 }
