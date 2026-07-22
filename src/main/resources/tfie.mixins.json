@@ -9,6 +9,7 @@
     "AllowInCrateMixin",
     "CrucibleBlockEntityAccessor",
     "DynamoBlockEntityMixin",
+    "FurnaceHandlerMixin",
     "IngredientFluidStackMixin"
   ],
   "refmap": "tfie.refmap.json"

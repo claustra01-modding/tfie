@@ -126,13 +126,23 @@ Immersive Engineering（IE）のNeoForge連携アドオンである。
 - Arc Furnace用TFC合金recipeはserializer `tfie:arc_furnace`を使用し、JSONの
   `output_temperature`を全main outputへ設定する。現在の値は出力金属のTFC鍛造可能
   温度と一致させる。slagとsecondary outputには設定しない。
-- `tfie:arc_furnace`の温度値は0以上の有限floatとし、温度を保持できないitemでは
+- IEのBlast FurnaceとImproved Blast Furnaceは共通のrecipe typeを使用するため、
+  heated outputにはserializer `tfie:blast_furnace`を共用する。JSONの
+  `output_temperature`をmain outputへ設定し、slagには設定しない。IE標準の
+  `blastfurnace/steel`と`blastfurnace/steel_block`は同じrecipe IDで上書きし、
+  SteelのTFC鍛造可能温度`924.00006`を設定する。
+- Blast Furnaceの既存output stackへ完成品を加える場合、IEはcomponentを比較せず
+  個数だけ増やすため、`FurnaceHandlerMixin`で完成後のmain output slot全体へ
+  recipe指定温度を再設定する。通常版とImproved版の両方に同じ処理を適用する。
+- `tfie:arc_furnace`と`tfie:blast_furnace`の温度値は0以上の有限floatとし、
+  温度を保持できないitemでは
   Heat設定を行わない。実際の機械出力には通常のTFC冷却を適用する。
-- JEIでは最大熱容量で温度を実質固定したArc Furnace表示用output stackによって
-  出力温度を示す。機械出力を生成するときは表示用の最大熱容量を解除する。
-  JEIへ直接依存しない。
-- IE機械のitem入出力に対するTFC Heat連携は、現時点ではArc Furnaceの出力だけを
-  対象とする。複数の異温度stackを合算できないためMetal Pressには適用しない。
+- JEIでは最大熱容量で温度を実質固定したArc FurnaceおよびBlast Furnace表示用
+  output stackによって出力温度を示す。機械出力を生成するときは表示用の最大
+  熱容量を解除する。JEIへ直接依存しない。
+- IE機械のitem入出力に対するTFC Heat連携は、現時点ではArc Furnace、Blast Furnace、
+  Improved Blast Furnaceの出力だけを対象とする。複数の異温度stackを合算できない
+  ためMetal Pressには適用しない。
 - steel storage blockを作るTFIE Metal Press recipeの出力は
   `tfc:metal/block/steel`（Steel Plated Block）とする。Arc Furnaceでは
   `tfc:metal/block/black_steel`（Black Steel Plated Block）、Advanced TFC Techの
