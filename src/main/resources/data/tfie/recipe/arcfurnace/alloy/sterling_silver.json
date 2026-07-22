@@ -1,5 +1,5 @@
 {
-  "type": "immersiveengineering:arc_furnace",
+  "type": "tfie:arc_furnace",
   "additives": [
     {
       "basePredicate": {
@@ -21,5 +21,6 @@
       "id": "tfc:metal/ingot/sterling_silver"
     }
   ],
-  "time": 100
+  "time": 100,
+  "output_temperature": 570.0
 }

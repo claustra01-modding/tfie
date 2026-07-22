@@ -1,5 +1,5 @@
 {
-  "type": "immersiveengineering:arc_furnace",
+  "type": "tfie:arc_furnace",
   "additives": [
     {
       "tag": "c:ingots/copper"
@@ -18,5 +18,6 @@
       "id": "tfc:metal/ingot/rose_gold"
     }
   ],
-  "time": 100
+  "time": 100,
+  "output_temperature": 576.0
 }

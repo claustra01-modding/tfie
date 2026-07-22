@@ -123,6 +123,16 @@ Immersive Engineering（IE）のNeoForge連携アドオンである。
   Brass `Cu:Zn = 9:1`、Bronze `Cu:Sn = 9:1`、Rose Gold `Au:Cu = 3:1`、
   Sterling Silver `Ag:Cu = 3:2`、Weak Steel `Steel:Ni:Black Bronze = 6:2:2`、
   Weak Blue/Red Steelは`Black Steel:Steel:Alloy A:Alloy B = 10:5:2:3`とする。
+- Arc Furnace用TFC合金recipeはserializer `tfie:arc_furnace`を使用し、JSONの
+  `output_temperature`を全main outputへ設定する。現在の値は出力金属のTFC鍛造可能
+  温度と一致させる。slagとsecondary outputには設定しない。
+- `tfie:arc_furnace`の温度値は0以上の有限floatとし、温度を保持できないitemでは
+  Heat設定を行わない。実際の機械出力には通常のTFC冷却を適用する。
+- JEIでは最大熱容量で温度を実質固定したArc Furnace表示用output stackによって
+  出力温度を示す。機械出力を生成するときは表示用の最大熱容量を解除する。
+  JEIへ直接依存しない。
+- IE機械のitem入出力に対するTFC Heat連携は、現時点ではArc Furnaceの出力だけを
+  対象とする。複数の異温度stackを合算できないためMetal Pressには適用しない。
 - steel storage blockを作るTFIE Metal Press recipeの出力は
   `tfc:metal/block/steel`（Steel Plated Block）とする。Arc Furnaceでは
   `tfc:metal/block/black_steel`（Black Steel Plated Block）、Advanced TFC Techの

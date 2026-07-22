@@ -7,6 +7,7 @@ import net.claustra01.tfie.common.ClocheRenderFunctions;
 import net.claustra01.tfie.common.CrucibleHeater;
 import net.claustra01.tfie.common.EmptyRecipe;
 import net.claustra01.tfie.common.HerbicideEffects;
+import net.claustra01.tfie.common.HeatArcFurnaceRecipe;
 import net.claustra01.tfie.common.ModBlockEntities;
 import net.claustra01.tfie.common.ModBlocks;
 import net.claustra01.tfie.common.ModCreativeTabs;
@@ -59,6 +60,10 @@ public final class TFIE {
     private void register(RegisterEvent event) {
         event.register(Registries.RECIPE_TYPE, EmptyRecipe.ID, () -> EmptyRecipe.TYPE);
         event.register(Registries.RECIPE_SERIALIZER, EmptyRecipe.ID, () -> EmptyRecipe.SERIALIZER);
+        event.register(
+            Registries.RECIPE_SERIALIZER,
+            HeatArcFurnaceRecipe.ID,
+            () -> HeatArcFurnaceRecipe.SERIALIZER);
     }
 
     private void registerCapabilities(RegisterCapabilitiesEvent event) {

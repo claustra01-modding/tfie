@@ -1,5 +1,5 @@
 {
-  "type": "immersiveengineering:arc_furnace",
+  "type": "tfie:arc_furnace",
   "additives": [
     {
       "tag": "c:ingots/zinc"
@@ -21,5 +21,6 @@
       "id": "tfc:metal/ingot/bismuth_bronze"
     }
   ],
-  "time": 100
+  "time": 100,
+  "output_temperature": 591.0
 }
